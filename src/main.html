@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="../assets/images/icon.png" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <title>تابلوساز هنر</title>
+  </head>
+  <body class="bg-gray-200 transition-all duration-300">
+    <div id="modal" class="h-0 absolute w-0 bg-white"></div>
+
+    <header
+      class="p-5 flex items-center fixed top-0 z-50 w-full justify-between transition-all duration-300"
+    >
+      <div class="flex items-center gap-2">
+        <img
+          src="../assets/images/icon.png"
+          alt="icon"
+          aria-label="icon"
+          class="rounded-full w-13 h-13 border border-[#f55725]"
+        />
+        <div class="max-md:hidden">
+          <p class="font-bold text-xl text-white">تابلوساز هنر</p>
+          <p class="text-sm text-white" id="toDayDate"></p>
+        </div>
+      </div>
+
+      <div
+        class="flex items-center hover:text-[#fe8800] gap-1 cursor-pointer text-white transition-all duration-300"
+        id="phoneNumberDiv"
+      >
+        <a href="tel:021-65292988" id="phoneNumber"> 021-65292988 </a>
+        <i class="fa fa-phone" style="font-size: 20px"></i>
+      </div>
+    </header>
+
+    <section>
+      <div class="relative">
+        <img
+          src="../assets/images/baner.jpg"
+          class="w-full max-h-screen z-0"
+          alt="header"
+          draggable="false"
+        />
+        <!-- <p class="text-9xl font-bold top-[60%] left-[10%] text-white absolute">
+          هنر
+        </p> -->
+        <div
+          class="flex items-center justify-center gap-2 absolute bottom-20 left-[45%] cursor-pointer"
+        >
+          <a
+            href="tel:021-65292988"
+            id="phoneNumberDiv"
+            class="border border-white text-white hover:bg-[#fe5d00] hover:border-[#fe5d00] hover:text-white transition-all duration-300 p-2 rounded-lg"
+          >
+            تماس باما <i class="fa fa-phone" style="font-size: 20px"></i>
+          </a>
+          <a
+            href="#portfolio"
+            class="bg-[#fe8800] hover:bg-[#fe5d00] hover:text-white transition-all duration-300 p-2 font-bold cursor-pointer rounded-lg text-white"
+          >
+            نمونه کارها
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="portfolio" class="p-5">
+      <p>کامپوزیت</p>
+      <div>ssssssssssss</div>
+    </section>
+
+    <footer
+      class="bg-[#d7d7d7] p-5 mt-96 h-64 w-full !bottom-0 grid grid-cols-3"
+    >
+      <div class="col-span-2 flex gap-2 p-2 justify-center items-s flex-col">
+        <a
+          class="flex items-center gap-1 hover:underline"
+          target="_blank"
+          href="https://balad.ir/directions/driving?destination=51.0622343%2C35.6636945#15/35.66404/51.06653"
+        >
+          <p>آدرس:</p>
+          <p>شهریار-خیابان کرشته-روبهروی مسجد حضرت ولیعصر (عج)</p>
+          <i class="fa fa-map-marker" style="font-size: 25px"></i>
+        </a>
+        <div class="flex items-center gap-1">
+          <a
+            href="https://wa.me/09193600064"
+            class="hover:underline"
+            target="_blank"
+          >
+            واتساپ:
+            <span>09193600064</span>
+          </a>
+          <i class="fa fa-whatsapp" style="font-size: 25px; color: green"></i>
+        </div>
+        <div class="flex items-center gap-1">
+          <a
+            href="https://wa.me/09106650013"
+            class="hover:underline"
+            target="_blank"
+          >
+            واتساپ:
+            <span>09106650013</span>
+          </a>
+          <i class="fa fa-whatsapp" style="font-size: 25px; color: green"></i>
+        </div>
+
+        <div
+          onclick="handleTelPhone()"
+          class="flex items-center gap-1 cursor-pointer hover:underline"
+        >
+          <p>
+            پاسخگویی سریع:
+            <span>09193600064</span>
+          </p>
+          <img
+            src="../assets/images/quick-response.png"
+            alt="quick-response"
+            target="_blank"
+            class="h-8 w-8"
+          />
+        </div>
+
+        <div class="flex items-center gap-1">
+          <a
+            href="https://wa.me/09106650013"
+            class="hover:underline"
+            target="_blank"
+          >
+            اینستاگرام:
+            <span>tablosaz__honar</span>
+          </a>
+          <i class="fa fa-instagram" style="font-size: 25px; color: red"></i>
+        </div>
+      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.5961834815808!2d51.06239498248776!3d35.66372964668079!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8df3f65389aa3f%3A0xa4aa9499855fc74!2z2KrYp9io2YTZiCDYs9in2LLbjCDZh9mG2LE!5e0!3m2!1sfa!2s!4v1744032498737!5m2!1sfa!2s"
+        class="h-full w-full rounded-lg"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </footer>
+
+    <div class="fixed bottom-5 left-5 select-none cursor-pointer">
+      <a
+        class="bg-[#fe8800] hover:bg-[#fe5d00] hover:text-white transition-all duration-300 p-2 font-bold cursor-pointer rounded-full text-white"
+        onclick="handleTelPhone()"
+        id="telPhone"
+        >مشاوره و ثبت سفارش</a
+      >
+    </div>
+    <!-- <img
+      src="../../assets/images/wall-bg.jpg"
+      alt="bg"
+      class="min-h-screen w-screen opacity-50 absolute z-0 select-none"
+      draggable="false"
+    /> -->
+  </body>
+
+  <script src="js/index.js"></script>
+</html>

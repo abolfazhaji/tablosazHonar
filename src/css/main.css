@@ -1,0 +1,20 @@
+body {
+  font-family: dana;
+  direction: rtl;
+  text-align: right;
+  background: "#C3C3C31F";
+}
+
+.bg-color {
+  background: linear-gradient(to right, #f0f0f1, #fe8800);
+}
+
+/* header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+} */
+.text-shadow {
+  text-shadow: 4px 4px 1px #c6ff29, 1px 1px 1px #1d4ed8;
+  font-size: 70px;
+}
