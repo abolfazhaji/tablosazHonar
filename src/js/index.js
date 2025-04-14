@@ -104,12 +104,8 @@ function handleTelPhone() {
   }
 }
 
-window.onscroll = function () {
-  stickyHeader();
-};
-
 const header = document.querySelector("header");
-const stickyOffset = 540;
+const stickyOffset = 300;
 
 function stickyHeader() {
   const phoneNumberDiv = document.querySelector("#phoneNumberDiv");
@@ -118,7 +114,38 @@ function stickyHeader() {
     phoneNumberDiv.classList.remove("text-white");
     phoneNumberDiv.classList.add("text-[#fe8800]");
   } else {
-    header.classList.remove("bg-color" ,"text-[#fe8800]", "shadow-xl");
+    header.classList.remove("bg-color", "text-[#fe8800]", "shadow-xl");
     phoneNumberDiv.classList.add("text-white");
   }
 }
+
+const right = document.querySelectorAll(".right");
+const left = document.querySelectorAll(".left");
+const right_1 = document.querySelectorAll(".right_1");
+const left_1 = document.querySelectorAll(".left_1");
+
+window.onscroll = () => {
+  stickyHeader();
+  if (window.pageYOffset > 300) {
+    right.forEach((p) => p.classList.add("!-translate-x-10", "!opacity-100"));
+    left.forEach((p) => p.classList.add("!-translate-x-50", "!opacity-100"));
+  } else {
+    right.forEach((p) =>
+      p.classList.remove("!-translate-x-10", "!opacity-100")
+    );
+
+    left.forEach((p) => p.classList.remove("!-translate-x-50", "!opacity-100"));
+  }
+  if (window.pageYOffset > 700) {
+    right_1.forEach((p) => p.classList.add("!-translate-x-10", "!opacity-100"));
+    left_1.forEach((p) => p.classList.add("!-translate-x-30", "!opacity-100"));
+  } else {
+    right_1.forEach((p) =>
+      p.classList.remove("!-translate-x-10", "!opacity-100")
+    );
+
+    left_1.forEach((p) =>
+      p.classList.remove("!-translate-x-30", "!opacity-100")
+    );
+  }
+};
