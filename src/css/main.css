@@ -1,8 +1,13 @@
+@font-face {
+  font-family:vazir;
+  src: url('../../assets/fonts/Vazir-FD-WOL.woff2') format('woff2'),
+       url('../../assets/fonts/Vazir-FD-WOL.woff') format('woff');
+  /* سایر خاصیت‌های مورد نیاز مانند font-weight و font-style */
+}
 body {
   font-family: vazir;
   direction: rtl;
   text-align: right;
-  background: "#C3C3C31F";
 }
 
 .bg-color {
@@ -54,4 +59,61 @@ body {
     opacity: 1;
     transform: translateY(0);
   }
+}
+
+.infinite-carousel {
+  /* margin: 100px 0; */
+  max-width: 100%;
+  width: 90%;
+  overflow: hidden;
+  /* -webkit-mask: linear-gradient(
+    90deg,
+    transparent,
+    #fff 30%,
+    #fff 80%,
+    transparent
+  );
+  mask: linear-gradient(90deg, transparent #fff 30%, #fff 80% transparent); */
+}
+/* .infinite-carousel {  
+  position: relative;  
+  max-width: 1000px;  
+  width: 90%;  
+  overflow: hidden;  
+}   */
+
+.infinite-carousel img {
+  max-width: 200px;
+}
+
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(200px); /* Adjust as necessary */
+  }
+}
+
+#inner-carousel {
+  display: flex;
+  width: calc(200px * 8); /* Adjust based on number of images */
+  animation: move 12s linear infinite;
+}
+/* @keyframes move {
+  to {
+    transform: translate(calc(-50% -15px));
+  }
+} */
+
+.infinite-carousel {
+  overflow: hidden;
+  width: 100%;
+}
+.inner-carousel {
+  display: flex;
+  white-space: nowrap;
+}
+.inner-carousel > * {
+  flex: 0 0 auto;
 }
