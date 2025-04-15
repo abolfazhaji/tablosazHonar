@@ -158,7 +158,9 @@ window.onscroll = () => {
   }
 };
 window.addEventListener("resize", function () {
-  console.log(window.innerWidth)
+  handle();
+});
+const handle = () => {
   const img = document.getElementById("bg_screen");
 
   img.className = "w-full md:min-h-screen max-md:h-[414px] z-0 opacity-85";
@@ -170,4 +172,5 @@ window.addEventListener("resize", function () {
   } else {
     img.src = "../assets/images/IMG_20250412_180927.jpg";
   }
-});
+};
+handle();

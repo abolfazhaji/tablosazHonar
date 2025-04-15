@@ -41,8 +41,8 @@
     </header>
 
     <section>
-      <div class="relative" >
-        <img id="bg_screen"/>
+      <div class="relative">
+        <img id="bg_screen" />
         <div
           class="flex items-center justify-center z-40 gap-2 absolute bottom-20 md:left-[45%] max-md:left-[24%] cursor-pointer"
         >
@@ -517,8 +517,11 @@
     </p>
 
     <footer
-      class="md:bg-[#d7d7d7] max-md:bg-gray-900 max-md:text-white p-5 w-full h-full relative !bottom-0 grid lg:grid-cols-4 md:grid-cols-3 max-md:grid-cols-1"
+      class="md:bg-[#d7d7d7] max-md:bg-gray-900 max-md:text-white p-5 w-full h-full relative grid lg:grid-cols-4 md:grid-cols-3 max-md:grid-cols-1"
     >
+      <a href="" title="انتقال به بالا" class="absolute -top-5 p-3 cursor-pointer rounded-lg lg:bg-[#fe8800] max-lg:bg-gray-400 lg:text-white max-lg:text-gray-900">
+        <i class="fa fa-angle-up" style="font-size: 36px"></i>
+      </a>
       <div class="md:col-span-2 flex gap-2 p-2 justify-center items-s flex-col">
         <a
           class="flex items-center flex-wrap gap-1 hover:underline"
@@ -645,23 +648,6 @@
       ></iframe>
     </footer>
 
-    <div id="myModal" class="modal">
-      <div class="modal-content">
-        <div class="flex justify-between">
-          <h2 id="titleModal"></h2>
-          <span
-            class="close hover:text-gray-500 duration-300 transition-all text-xl cursor-pointer"
-            >&times;</span
-          >
-        </div>
-        <p id="descModal"></p>
-        <p
-          class="bg-[#fe8800] text-center m-auto w-1/12 mt-5 close hover:bg-[#fe5d00] hover:text-white transition-all duration-300 p-2 font-bold cursor-pointer rounded-lg text-white"
-        >
-          بستن
-        </p>
-      </div>
-    </div>
     <div class="fixed bottom-5 left-5 select-none cursor-pointer">
       <a
         href="tel:09193600064"

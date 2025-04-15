@@ -134,3 +134,6 @@ body {
   flex: 0 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
