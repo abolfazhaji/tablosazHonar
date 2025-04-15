@@ -11,5 +11,5 @@ carousels.forEach((carousel) => {
   });
 
   const newWidth = 100 * totalItems;
-  carouselInner.classList.add = !w - 96;
+  carouselInner.classList.add("!w-96");
 });

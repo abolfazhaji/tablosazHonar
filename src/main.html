@@ -14,9 +14,9 @@
     <title>تابلوساز هنر</title>
   </head>
   <!-- 1376 -->
-  <body class="bg-color transition-all duration-300">
+  <body class="bg-color max-md:text-gray-900 transition-all duration-300">
     <header
-      class="p-5 flex items-center fixed top-0 z-40 w-full justify-between transition-all duration-300"
+      class="p-5 flex bg-color-2 items-center md:fixed top-0 z-50 w-full justify-between transition-all duration-300"
     >
       <div class="flex items-center gap-2">
         <img
@@ -41,17 +41,10 @@
     </header>
 
     <section>
-      <div class="relative">
-        <img
-          src="../assets/images/IMG_20250412_180927.jpg"
-          class="w-full max-h-screen z-0 opacity-85"
-          alt="header"
-          draggable="false"
-        />
-        <!-- <p class="text-8xl text-white font-bold absolute top-[50%] left-[50%]">z</p> -->
-
+      <div class="relative" >
+        <img id="bg_screen"/>
         <div
-          class="flex items-center justify-center gap-2 absolute bottom-20 left-[45%] cursor-pointer"
+          class="flex items-center justify-center z-40 gap-2 absolute bottom-20 md:left-[45%] max-md:left-[24%] cursor-pointer"
         >
           <a
             href="tel:09106650013"
@@ -70,11 +63,11 @@
       </div>
     </section>
 
-    <section class="w-full md:flex mt-5">
+    <section class="w-full lg:flex lg:mt-5 max-xl:p-5">
       <div
-        class="transition-all text-white right translate-x-5 text-lg opacity-0 duration-700 w-[500px] h-[500px]"
+        class="transition-all lg:text-white max-md:text-gray-900 right lg:translate-x-5 text-lg opacity-0 max-lg:w-full duration-700 lg:w-[500px] lg:h-[500px]"
       >
-        <p class="text-3xl mt-20">گروه تابلوسازی هنر</p>
+        <p class="text-3xl xl:mt-20">گروه تابلوسازی هنر</p>
         <p style="line-height: 1cm" class="mt-10">
           گروه تابلوساز هنر از سال 1376 فعالیت خود را در صنف تابلوسازی آغاز کرد
           و با کمک اعضای تیم متخصص خود تبدیل به قدیمی‌ترین و حرفه‌ای‌ترین تیم
@@ -86,52 +79,66 @@
 
       <img
         src="../assets/images/IMG_20250413_214431_445.jpg"
-        class="transition-all left -translate-x-0 opacity-0 rounded-lg shadow-lg duration-700 w-[400px] h-[400px] bg-gray-900"
+        class="transition-all left -translate-x-0 opacity-0 rounded-lg max-lg:w-full shadow-lg duration-700 lg:w-[400px] lg:h-[400px] bg-gray-900"
         alt="---"
       />
     </section>
 
-    <section class="w-full flex">
+    <section class="w-full flex max-lg:flex-col max-lg:p-5">
       <img
         src="../assets/images/IMG_20250413_214431_401.jpg"
-        class="transition-all right_1 -translate-x-0 opacity-0 rounded-lg shadow-lg duration-700 w-[400px] h-[400px] bg-gray-900"
+        class="transition-all right_1 -translate-x-0 opacity-0 rounded-lg shadow-lg duration-700 max-lg:w-full lg:w-[400px] lg:h-[400px] bg-gray-900"
         alt="---"
       />
       <div
-        class="transition-all text-white left_1 translate-x-5 text-lg opacity-0 duration-700 w-[500px] h-[500px]"
+        class="transition-all md:text-white max-md:text-gray-900 left_1 lg:translate-x-5 text-lg opacity-0 duration-700 max-lg:w-full lg:w-[500px] lg:h-[500px]"
       >
-        <div class="flex items-center">
-          <p class="text-7xl px-2">1-</p>
-          <p class="text-5xl">تخصص و تجربه</p>
+        <div class="flex items-center max-lg:mt-5">
+          <p class="lg:text-7xl max-lg:text-3xl px-2">1-</p>
+          <p class="lg:text-5xl max-lg:text-3xl">تخصص و تجربه</p>
         </div>
-        <p>
+        <p class="max-lg:mb-5 max-lg:border-b">
           .ما ضمانت میکنیم که تمامی کارهای ما بالاترین کیفیت و تخصص طراحی و
           تولید میشود
         </p>
-        <div class="flex items-center pr-15">
-          <p class="text-7xl px-2">2-</p>
-          <p class="text-5xl">تحویل سریع</p>
+
+        <div class="flex items-center md:pr-15 max-lg:mt-5">
+          <p class="lg:text-7xl max-lg:text-3xl px-2">2-</p>
+          <p class="lg:text-5xl max-lg:text-3xl">تحویل سریع</p>
         </div>
-        <p class="pr-15">ما بالاترین سرعت در تولید و طراحی را ارائه میدهیم.</p>
-        <div class="flex items-center pr-25">
-          <p class="text-7xl px-2">3-</p>
-          <p class="text-5xl text-nowrap">طراحی دقیق و منظم</p>
+        <p class="lg:pr-15 max-lg:mb-5 max-lg:border-b">
+          ما بالاترین سرعت در تولید و طراحی را ارائه میدهیم.
+        </p>
+        <div class="flex items-center md:pr-25">
+          <p class="lg:text-7xl max-lg:text-3xl px-2">3-</p>
+          <p class="lg:text-5xl max-lg:text-3xl text-nowrap">
+            طراحی دقیق و منظم
+          </p>
         </div>
-        <p class="pr-25">ما بالاترین کیفیت در تولید و طراحی را ارائه میدهیم.</p>
+        <p class="md:pr-25 max-lg:mb-5 max-lg:border-b">
+          ما بالاترین کیفیت در تولید و طراحی را ارائه میدهیم.
+        </p>
       </div>
     </section>
 
-    <div class="flex items-center w-10/12 mx-auto">
-      <div class="border border-gray-100 w-full"></div>
-      <p class="text-white text-5xl text-nowrap">نمونه کارها</p>
-      <div class="border border-gray-100 w-full"></div>
-    </div>
+    <section class="flex items-center w-10/12 mx-auto">
+      <div
+        class="border md:border-gray-100 max-md:border-gray-900 w-full"
+      ></div>
+      <p
+        class="md:text-white max-lg:text-gray-900 md:text-5xl max-md:text-2xl text-nowrap"
+      >
+        نمونه کارها
+      </p>
+      <div
+        class="border md:border-gray-100 max-md:border-gray-900 w-full"
+      ></div>
+    </section>
+
     <section
       id="portfolio"
-      class="p-5 w-10/12 mx-auto gap-2 grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1"
+      class="md:p-5 w-10/12 mx-auto gap-2 grid grid-cols-4 md:grid-cols-3 sm:grid-cols-2 max-sm:grid-cols-1"
     >
-      <!-- <p ></p> -->
-
       <a href="#3DPictures" class="p-5 rounded-lg bg-gray-100 text-center">
         <img
           src="../assets/images/8img.jpg"
@@ -187,9 +194,17 @@
       class="p-5 w-10/12 mx-auto gap-2 text-white relative"
     >
       <div class="flex items-center mx-auto">
-        <div class="border border-gray-100 w-full"></div>
-        <p class="text-white text-5xl text-nowrap">تصاویر 3بعدی</p>
-        <div class="border border-gray-100 w-full"></div>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
+        <p
+          class="md:text-white max-lg:text-gray-900 md:text-5xl max-md:text-2xl text-nowrap"
+        >
+          تصاویر 3بعدی
+        </p>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
       </div>
       <div class="infinite-carousel mx-auto my-10">
         <div
@@ -234,14 +249,23 @@
         </div>
       </div>
     </section>
+
     <section
       id="Chanelleum"
       class="p-5 w-10/12 mx-auto gap-2 text-white relative"
     >
       <div class="flex items-center mx-auto">
-        <div class="border border-gray-100 w-full"></div>
-        <p class="text-white text-5xl text-nowrap">چنلیوم</p>
-        <div class="border border-gray-100 w-full"></div>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
+        <p
+          class="md:text-white max-lg:text-gray-900 md:text-5xl max-md:text-2xl text-nowrap"
+        >
+          چنلیوم
+        </p>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
       </div>
       <div class="infinite-carousel mx-auto my-10">
         <div
@@ -286,11 +310,20 @@
         </div>
       </div>
     </section>
+
     <section id="World" class="p-5 w-10/12 mx-auto gap-2 text-white relative">
       <div class="flex items-center mx-auto">
-        <div class="border border-gray-100 w-full"></div>
-        <p class="text-white text-5xl text-nowrap">نقش جهان</p>
-        <div class="border border-gray-100 w-full"></div>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
+        <p
+          class="md:text-white max-lg:text-gray-900 md:text-5xl max-md:text-2xl text-nowrap"
+        >
+          نقش جهان
+        </p>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
       </div>
       <div class="infinite-carousel mx-auto my-10">
         <div
@@ -321,9 +354,17 @@
       class="p-5 w-10/12 mx-auto gap-2 text-white relative"
     >
       <div class="flex items-center mx-auto">
-        <div class="border border-gray-100 w-full"></div>
-        <p class="text-white text-5xl text-nowrap">نئون‌فلکسی</p>
-        <div class="border border-gray-100 w-full"></div>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
+        <p
+          class="md:text-white max-lg:text-gray-900 md:text-5xl max-md:text-2xl text-nowrap"
+        >
+          نئون‌فلکسی
+        </p>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
       </div>
       <div class="infinite-carousel mx-auto my-10">
         <div
@@ -371,9 +412,17 @@
 
     <section id="Mural" class="p-5 w-10/12 mx-auto gap-2 text-white relative">
       <div class="flex items-center mx-auto">
-        <div class="border border-gray-100 w-full"></div>
-        <p class="text-white text-5xl text-nowrap">دیوار نگار</p>
-        <div class="border border-gray-100 w-full"></div>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
+        <p
+          class="md:text-white max-lg:text-gray-900 md:text-5xl max-md:text-2xl text-nowrap"
+        >
+          دیوار نگار
+        </p>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
       </div>
       <div class="infinite-carousel mx-auto my-10">
         <div
@@ -411,9 +460,17 @@
 
     <section id="3DModel" class="p-5 w-10/12 mx-auto gap-2 text-white relative">
       <div class="flex items-center mx-auto">
-        <div class="border border-gray-100 w-full"></div>
-        <p class="text-white text-5xl text-nowrap">3بعدی</p>
-        <div class="border border-gray-100 w-full"></div>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
+        <p
+          class="md:text-white max-lg:text-gray-900 md:text-5xl max-md:text-2xl text-nowrap"
+        >
+          3بعدی
+        </p>
+        <div
+          class="border md:border-gray-100 max-md:border-gray-900 w-full"
+        ></div>
       </div>
       <div class="infinite-carousel mx-auto my-10">
         <div
@@ -444,12 +501,27 @@
       </div>
     </section>
 
-    <footer
-      class="bg-[#d7d7d7] p-5 mt-96 h-64 w-full relative !bottom-0 grid grid-cols-4"
+    <p
+      class="flex items-center gap-1 p-5 w-10/12 justify-center flex-wrap md:text-white max-md:text-gray-900 mx-auto"
     >
-      <div class="col-span-2 flex gap-2 p-2 justify-center items-s flex-col">
+      برای مشاهده ادامه نمونه کار ها به پیج اینستاگرام ما با نشانی
+      <a
+        href="https://instagram/tablosaz__honar"
+        class="hover:underline flex gap-1 items-center"
+        target="_blank"
+      >
+        <span>tablosaz__honar</span>
+        <i class="fa fa-instagram" style="font-size: 25px; color: red"></i>
+      </a>
+      مراجعه کنید.
+    </p>
+
+    <footer
+      class="md:bg-[#d7d7d7] max-md:bg-gray-900 max-md:text-white p-5 w-full h-full relative !bottom-0 grid lg:grid-cols-4 md:grid-cols-3 max-md:grid-cols-1"
+    >
+      <div class="md:col-span-2 flex gap-2 p-2 justify-center items-s flex-col">
         <a
-          class="flex items-center gap-1 hover:underline"
+          class="flex items-center flex-wrap gap-1 hover:underline"
           target="_blank"
           href="https://balad.ir/directions/driving?destination=51.0622343%2C35.6636945#15/35.66404/51.06653"
         >
@@ -480,8 +552,8 @@
           <i class="fa fa-whatsapp" style="font-size: 25px; color: green"></i>
         </div>
 
-        <div
-          onclick="handleTelPhone()"
+        <a
+          href="tel:09193600064"
           class="flex items-center gap-1 cursor-pointer hover:underline"
         >
           <p>
@@ -494,7 +566,7 @@
             target="_blank"
             class="h-8 w-8"
           />
-        </div>
+        </a>
 
         <div class="flex items-center gap-1">
           <a
@@ -515,49 +587,49 @@
         </div>
         <a
           href="#portfolio"
-          class="flex items-center text-gray-700 gap-1 cursor-pointer"
+          class="flex items-center max-md:text-gray-100 md:text-gray-700 gap-1 cursor-pointer"
         >
           <span class="bg-[#fe8800] rounded-lg w-5 h-1"></span>
           <p class="text-md">نمونه کارها</p>
         </a>
         <a
           href="#3DPictures"
-          class="flex items-center text-gray-700 gap-1 cursor-pointer"
+          class="flex items-center max-md:text-gray-100 md:text-gray-700 gap-1 cursor-pointer"
         >
           <span class="bg-[#fe8800] rounded-lg w-5 h-1"></span>
           <p class="text-md">تصاویر 3بعدی</p></a
         >
         <a
           href="#Chanelleum"
-          class="flex items-center text-gray-700 gap-1 cursor-pointer"
+          class="flex items-center max-md:text-gray-100 md:text-gray-700 gap-1 cursor-pointer"
         >
           <span class="bg-[#fe8800] rounded-lg w-5 h-1"></span>
           <p class="text-md">چنلیوم</p></a
         >
         <a
           href="#World"
-          class="flex items-center text-gray-700 gap-1 cursor-pointer"
+          class="flex items-center max-md:text-gray-100 md:text-gray-700 gap-1 cursor-pointer"
         >
           <span class="bg-[#fe8800] rounded-lg w-5 h-1"></span>
           <p class="text-md">نقش جهان</p></a
         >
         <a
           href="#NeonFlexi"
-          class="flex items-center text-gray-700 gap-1 cursor-pointer"
+          class="flex items-center max-md:text-gray-100 md:text-gray-700 gap-1 cursor-pointer"
         >
           <span class="bg-[#fe8800] rounded-lg w-5 h-1"></span>
           <p class="text-md">نئون‌فلکسی</p></a
         >
         <a
           href="#Mural"
-          class="flex items-center text-gray-700 gap-1 cursor-pointer"
+          class="flex items-center max-md:text-gray-100 md:text-gray-700 gap-1 cursor-pointer"
         >
           <span class="bg-[#fe8800] rounded-lg w-5 h-1"></span>
           <p class="text-md">دیوارنگار</p></a
         >
         <a
           href="#3DModel"
-          class="flex items-center text-gray-700 gap-1 cursor-pointer"
+          class="flex items-center max-md:text-gray-100 md:text-gray-700 gap-1 cursor-pointer"
         >
           <span class="bg-[#fe8800] rounded-lg w-5 h-1"></span>
           <p class="text-md">3بعدی</p></a
@@ -592,14 +664,13 @@
     </div>
     <div class="fixed bottom-5 left-5 select-none cursor-pointer">
       <a
+        href="tel:09193600064"
         class="bg-[#fe8800] hover:bg-[#fe5d00] hover:text-white transition-all duration-300 p-2 font-bold cursor-pointer rounded-full text-white"
-        onclick="handleTelPhone()"
         id="telPhone"
         >مشاوره و ثبت سفارش</a
       >
     </div>
   </body>
-
-  <script src="js/index.js"></script>
   <script src="js/slider.js"></script>
+  <script src="js/index.js"></script>
 </html>
