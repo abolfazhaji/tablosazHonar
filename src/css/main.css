@@ -2,7 +2,6 @@
   font-family: vazir;
   src: url("../../assets/fonts/Vazir-FD-WOL.woff2") format("woff2"),
     url("../../assets/fonts/Vazir-FD-WOL.woff") format("woff");
-  /* سایر خاصیت‌های مورد نیاز مانند font-weight و font-style */
 }
 body {
   font-family: vazir;
@@ -82,21 +81,7 @@ body {
   max-width: 100%;
   width: 90%;
   overflow: hidden;
-  /* -webkit-mask: linear-gradient(
-    90deg,
-    transparent,
-    #fff 30%,
-    #fff 80%,
-    transparent
-  );
-  mask: linear-gradient(90deg, transparent #fff 30%, #fff 80% transparent); */
 }
-/* .infinite-carousel {  
-  position: relative;  
-  max-width: 1000px;  
-  width: 90%;  
-  overflow: hidden;  
-}   */
 
 .infinite-carousel img {
   max-width: 200px;
@@ -116,11 +101,6 @@ body {
   width: calc(100px * 8); /* Adjust based on number of images */
   animation: move 12s linear infinite;
 }
-/* @keyframes move {
-  to {
-    transform: translate(calc(-50% -15px));
-  }
-} */
 
 .infinite-carousel {
   overflow: hidden;
@@ -136,4 +116,9 @@ body {
 
 html {
   scroll-behavior: smooth;
+}
+.animate-in {
+  opacity: 1;
+  transform: translateX(0);
+  transition: all 0.7s ease-out;
 }
